@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 
@@ -8,49 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UTPARK</title>
     <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
-    <link rel="icon" href="{% static 'landing/logo1.png' %}">
+    <link rel="icon" href="  {% static 'landing/logo1.png' %}"  >
 </head>
 
 <body>
 
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo"><img src="{% static 'landing/logo1.png' %}" alt=""> UTPARK</a>
+            <a href="#" class="logo"><img src="  {% static 'landing/logo1.png' %}"   alt=""> UTPARK</a>
             <input type="checkbox" id="menu">
             <label for="menu">
-                <img src="{% static 'landing/menu.png' %}" alt="">
+                <img src="  {% static 'landing/menu.png}"   alt="">
             </label>
             <nav class="navbar">
                 <ul>
+                    <li><a href="  {% url 'index' %}">Inicio</a></li>
                     <li><a href="  {% url 'nosotros' %}">Nosotros</a></li>
-                    <li><a href="  {% url 'contacto' %}">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <div class="header-content container">
+    <div class="info">
+        <img src="  {% static 'landing/personaje.png' %}"   alt="">
+    </div>
+    <div class="carta-contacto">
 
-        <div class="header-txt">
-            <img src="{% static 'landing/baner2.jpg' %}" alt="">
+        <h1>Info</h1>
+
+        <div class="contact"><img src="  {% static 'landing/sobre.png' %}"  alt="" class="icono">
+            <h3> utpark@hotmail.com</h3>
         </div>
-    </div>
-
-    <div class="general container">
-        <div class="general-content">
-         
-                <img src="{% static 'landing/cuadro1.jpg' %}" alt="">
-       
-
-                <img src="{% static 'landing/cuadro2.jpg' %}" alt="">
-           
-                <img src="{% static 'landing/cuadro3.jpg' %}" alt="">
-            
+        <div class="contact"><img src="  {% static 'landing/telefono.png' %}"  alt="" class="icono">
+            <h3>81 8124 8400</h3>
         </div>
+        <div class="contact"><img src="  {% static 'landing/edificio.png' %}"  alt="" class="icono">
+            <h3>
+                Carretera Saltillo-Monterrey Km. 61.5 C.P. 66359,
+                Santa Catarina, N.L.
+
+            </h3>
+        </div>
+        <div class="contact"><img src="  {% static 'landing/reloj.png' %}"  alt="" class="icono">
+            <h3>9:30 - 17:30</h3>
+        </div>
+
     </div>
-    <div class="header-txt">
-        <img src="{% static 'landing/baner1.jpg' %}" alt="">
-    </div>
+  
+
 </body>
 <div class="footer-basic">
     <footer>
