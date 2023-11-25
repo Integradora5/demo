@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 
@@ -12,45 +11,37 @@
 </head>
 
 <body>
-
+  
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo"><img src="{% static 'landing/logo1.png' %}" alt=""> UTPARK</a>
             <input type="checkbox" id="menu">
             <label for="menu">
-                <img src="{% static 'landing/menu.png' %}" alt="">
+                <img src="  {% static 'landing/menu.png' %}" alt="">
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="  {% url 'nosotros' %}">Nosotros</a></li>
+                    <li><a href="  {% url 'index' %}">Inicio</a></li>
                     <li><a href="  {% url 'contacto' %}">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <div class="header-content container">
-
-        <div class="header-txt">
-            <img src="{% static 'landing/baner2.jpg' %}" alt="">
-        </div>
-    </div>
 
     <div class="general container">
-        <div class="general-content">
-         
-                <img src="{% static 'landing/cuadro1.jpg' %}" alt="">
-       
+        <div class="personal">
+            <img src="  {% static 'landing/PERSON.jpg' %}" alt="">
 
-                <img src="{% static 'landing/cuadro2.jpg' %}" alt="">
-           
-                <img src="{% static 'landing/cuadro3.jpg' %}" alt="">
-            
+            <img src="  {% static 'landing/PERSON2.jpg' %}" alt="">
+
+            <img src="  {% static 'landing/PERSON3.jpg' %}" alt="">
+
+            <img src="  {% static 'landing/PERSON4.jpg' %}"  alt="">
+
         </div>
     </div>
-    <div class="header-txt">
-        <img src="{% static 'landing/baner1.jpg' %}" alt="">
-    </div>
+  
 </body>
 <div class="footer-basic">
     <footer>
